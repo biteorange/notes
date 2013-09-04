@@ -1,0 +1,115 @@
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{algorithm}
+\usepackage[noend]{algorithmic}
+\usepackage{hyperref}
+%\newcommand{\theHalgorithm}{\arabic{algorithm}}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[mathscr]{eucal}
+\usepackage{a4wide}
+\usepackage{fancyhdr}
+
+\pagestyle{fancyplain}
+\lhead{ \fancyplain{}{\mytitle} }
+\rhead{ \fancyplain{}{draft \today} }
+
+\newcommand\shrink[1]{}
+
+\def\bn{{\mathcal{N}}}
+\def\pr{{\it Pr}}
+\def\mpr{{\cal P}}
+\def\cpr{{\mathbb{P}}}
+\def\expect{{\mathbb{E}}}
+\def\X{{\bf X}}
+\def\x{{\bf x}}
+\def\Z{{\bf Z}}
+\def\z{{\bf z}}
+\def\Y{{\bf Y}}
+\def\y{{\bf y}}
+\def\U{{\bf U}}
+\def\u{{\bf u}}
+\def\S{{\bf S}}
+%\def\MD{{\mathcal D}}
+\def\MD{{\boldsymbol{\mathscr{D}}}}
+\def\H{{\bf H}}
+\def\h{{\bf h}}
+\def\d{{\bf d}}
+\def\L{{\bf L}}
+%\def\MS{{\mathcal{S}}}
+\def\MS{{\boldsymbol{\mathcal{S}}}}
+\def\s{{\bf s}}
+\def\MH{{\mathcal{ H}}}
+\def\a{{\bf a}}
+\def\eql(#1,#2){{#1\!=\!#2}}
+\def\LL{{LL}}
+\def\CLL{{CLL}}
+\def\CMAP{{CMAP}}
+\def\CMAP{{CMAP}}
+\def\LS{{LS}}
+\def\LSO{{LS1}}
+
+\def\n(#1){{\overline{#1}}}
+
+\DeclareMathOperator*{\argmax}{argmax}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+
+
+
+
+\newcommand\Amain[1]{
+\textbf{main:}
+#1
+\vspace{1mm}
+}
+
+\newcommand\Ainputb[4]{
+\vspace{1mm}
+\textbf{input:}\\
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{ll}
+#1: & #2 \\
+#3: & #4
+\end{tabular}
+}
+
+\newcommand\Ainputc[6]{
+\vspace{1mm}
+\textbf{input:}\\
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{ll}
+#1: & #2 \\
+#3: & #4 \\
+#5: & #6
+\end{tabular}
+}
+
+\newcommand\Ainputd[8]{
+\vspace{1mm}
+\textbf{input:}\\
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{ll}
+#1: & #2 \\
+#3: & #4 \\
+#5: & #6 \\
+#7: & #8
+\end{tabular}
+}
+
+\newcommand\Aoutput[1]{
+\vspace{1mm}
+\textbf{output:} #1
+\vspace{1mm}
+}
